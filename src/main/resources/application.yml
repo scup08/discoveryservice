@@ -1,0 +1,43 @@
+server:
+   port: 8761
+
+eureka:
+   instance:
+     hostname: localhost
+   client:
+     registerWithEureka: false
+     fetchRegistry: false
+     serviceUrl:
+       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      
+spring:
+  profiles:
+    active: dev
+
+---
+#开发环境配置
+spring:
+  profiles: dev
+
+words: 你,我,他
+#server:
+#  port: 8080
+
+
+---
+#测试环境配置
+spring:
+  profiles: test
+
+#server:
+#  port: 8081
+
+
+---
+#生产环境配置
+
+spring:
+  profiles: pro
+
+#server:
+#  port: 8082
