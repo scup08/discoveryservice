@@ -3,7 +3,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.xhld</groupId>
   <artifactId>discoveryservice</artifactId>
-  <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>discoveryservice Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -64,6 +63,19 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+			<!-- 
+			<plugin>  
+				<groupId>org.apache.maven.plugins</groupId>  
+				<artifactId>maven-jar-plugin</artifactId>  
+				<configuration>  
+			    	<archive>  
+			      		<manifestEntries>  
+							<Class-Path>com.xhld.discoveryservice.DiscoveryserviceApplication</Class-Path>  
+						</manifestEntries>
+			    	</archive>  
+			  	</configuration>  
+			</plugin>
+			 -->
 		</plugins>
 	</build>
 </project>
