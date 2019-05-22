@@ -2,9 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>com.lzh</groupId>
 	<artifactId>discoveryservice</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	
 	<name>discoveryservice Maven Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -18,7 +16,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 		
 	</dependencies>
@@ -27,12 +25,12 @@
 		<finalName>discoveryservice</finalName>
 		<plugins>
 			<!-- 富打包 -->
-			<!-- 
+			<!--  -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			 -->
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -42,7 +40,7 @@
 				</configuration>
 			</plugin>
 			<!-- 最小打包 -->
-			<!--  -->
+			<!-- 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId> 
@@ -56,7 +54,7 @@
 					</archive>
 				</configuration> 
 			</plugin> 
-			
+			 -->
 		</plugins>
 	</build>
 </project>
